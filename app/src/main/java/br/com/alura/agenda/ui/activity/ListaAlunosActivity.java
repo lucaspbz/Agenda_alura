@@ -31,7 +31,7 @@ public class ListaAlunosActivity extends AppCompatActivity {
         setTitle(TITULO_APPBAR);
         listaAlunosView = new ListaAlunosView(this);
         configuraFabNovoAluno();
-        configurLista();
+        configuraLista();
     }
 
     @Override
@@ -66,7 +66,7 @@ public class ListaAlunosActivity extends AppCompatActivity {
         listaAlunosView.atualizaAlunos();
     }
 
-    private void configurLista() {
+    private void configuraLista() {
         ListView listaDeAlunos = findViewById(R.id.activity_lista_alunos_listview);
         listaAlunosView.configuraAdapter(listaDeAlunos);
         configuraListenerDeCliquePorItem(listaDeAlunos);

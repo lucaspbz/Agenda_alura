@@ -40,7 +40,7 @@ public class ListaAlunosView {
         adapter.atualiza(dao.todos());
     }
 
-    public void remove(Aluno aluno) {
+    private void remove(Aluno aluno) {
         dao.remove(aluno);
         adapter.remove(aluno);
     }
