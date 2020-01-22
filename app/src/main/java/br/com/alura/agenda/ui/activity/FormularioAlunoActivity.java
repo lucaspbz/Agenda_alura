@@ -111,9 +111,7 @@ public class FormularioAlunoActivity extends AppCompatActivity {
 
     private void editaAluno(Telefone telefoneFixo, Telefone telefoneCelular) {
         alunoDao.edita(aluno);
-
         vinculaAlunoComTelefone(aluno.getId(), telefoneFixo, telefoneCelular);
-
         atualizaDadosDosTelefones(telefoneFixo, telefoneCelular);
         telefoneDAO.atualiza(telefoneFixo, telefoneCelular);
     }
