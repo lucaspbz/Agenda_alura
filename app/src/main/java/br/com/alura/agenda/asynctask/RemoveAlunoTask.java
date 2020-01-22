@@ -9,9 +9,9 @@ import br.com.alura.agenda.ui.adapter.ListaAlunosAdapter;
 public class RemoveAlunoTask extends AsyncTask<Void, Void, Void> {
 
 
-    private AlunoDao dao;
-    private Aluno aluno;
-    private ListaAlunosAdapter adapter;
+    private final AlunoDao dao;
+    private final Aluno aluno;
+    private final ListaAlunosAdapter adapter;
 
     public RemoveAlunoTask(AlunoDao dao, Aluno aluno, ListaAlunosAdapter adapter) {
         this.dao = dao;

@@ -9,6 +9,7 @@ import br.com.alura.agenda.model.Aluno;
 import br.com.alura.agenda.ui.adapter.ListaAlunosAdapter;
 
 public class BuscaAlunoTask extends AsyncTask<Void, Void, List<Aluno>> {
+
     private final ListaAlunosAdapter adapter;
     private final AlunoDao dao;
 

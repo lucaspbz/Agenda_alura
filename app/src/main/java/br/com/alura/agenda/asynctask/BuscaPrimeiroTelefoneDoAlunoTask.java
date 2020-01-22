@@ -8,7 +8,7 @@ import br.com.alura.agenda.model.Telefone;
 public class BuscaPrimeiroTelefoneDoAlunoTask extends AsyncTask<Void, Void, Telefone> {
     private final TelefoneDao dao;
     private final int alunoId;
-    private PrimeiroTelefoneEncontradoListener listener;
+    private final PrimeiroTelefoneEncontradoListener listener;
 
     public BuscaPrimeiroTelefoneDoAlunoTask(TelefoneDao dao, int alunoId, PrimeiroTelefoneEncontradoListener listener) {
         this.dao = dao;
